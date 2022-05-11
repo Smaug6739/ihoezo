@@ -27,7 +27,8 @@ void thread2() {
     }
     end = true;
     std::cout << "Unknown hash.\nAttemps: " << attemps << "." << std::endl;
-}/*
+}
+/*
 int main(int arc, char* argv[])
 {
     //std::thread t1(thread1);
