@@ -5,6 +5,7 @@
 
 bool end{ false };
 long int attemps{ 0 };
+/*
 std::string reference{"96719db60d8e3f498c98d94155e1296aac105c4923290c89eeeb3ba26d3eef92"};
 void thread1() {
     while (end != true) {
@@ -26,12 +27,13 @@ void thread2() {
     }
     end = true;
     std::cout << "Unknown hash.\nAttemps: " << attemps << "." << std::endl;
-}
+}/*
 int main(int arc, char* argv[])
 {
-    std::thread t1(thread1);
-    std::thread t2(thread2);
-    t1.join();
-    t2.join();
+    //std::thread t1(thread1);
+    //std::thread t2(thread2);
+    //t1.join();
+    //t2.join();
+    std::string hash{ sha_256("Test") };
     return 0;
 }
